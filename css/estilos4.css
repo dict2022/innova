@@ -1,0 +1,258 @@
+@font-face{
+    font-family:"Myriad";
+        src: url(../fonts/Myriad-Pro-Regular.ttf);
+    font-family:"elegan";
+        src: url(../fonts/EleganTech.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+    
+    
+
+body{
+   font-family: 'elegan', sans-serif;;
+    margin: 2;
+}
+
+/*------estilos bases-------*/
+
+
+h1, h2, h4, h5, h6 {
+    margin: 1;
+}
+
+header{
+    font-family: 'elegan', sans-serif;
+    background:#566056;
+    
+    
+}
+
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.column{
+    width: 100;
+}
+
+/*----estilos header------*/
+
+.main-header{
+    width: 100%;
+}
+
+.logo{
+    display: block;
+    font-size: 2.5em;
+    color: white;
+    background: #da5638;
+    padding: 10px;
+    font-family: 'elegan', sans-serif;;
+    font-weight: 10;
+}
+
+.main-header__contaInfo__phone{
+    background: #da5638;
+    color:white;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.main-header__contaInfo__address{
+     background: #566056;
+    color:white;
+    margin: 0 auto;
+    padding: 5px;
+    
+}
+
+.main-header__contaInfo__mail{
+     background: #da5638;
+    color:white;
+    margin: 0 auto;
+    padding: 5px;
+    
+}
+
+
+/*-------estilos del menu-----*/
+
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+
+.icon-menu {
+    display: block;
+    color: white;  
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 53px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    
+    
+}
+
+.social-icon{
+    display: flex;
+    font-family: 'Myriad', sans-serif;
+    justify-content: space-between;
+   
+   
+    
+}
+
+/* no funciona porque estan linquiadas y no imagenes*/
+.social-icon[class*="social-icon__link"]
+{
+    color: black;
+    margin: 2px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: #da5638;
+    border-radius:50%;
+    
+}
+/*-------------*/
+
+.menu {
+    position: absolute;
+    font-family: 'elegan', sans-serif;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.90);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+    
+}
+
+.menu__link{
+    display: block;
+    padding: 3px;
+    color:white;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+   background: #da5638; 
+}
+
+.menu__link--select{
+    background: #da5638;
+    
+}
+
+.mostrar {
+    height: 230px;
+    
+}
+
+/*estilos de banner*/
+
+
+.banner__content{
+   display: flex;
+ font-family: 'Myriad', sans-serif;
+    padding: 10px;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    width:120%;
+}
+
+.imagenizquierdo{
+    margin-top: 90px;
+    width:120%;
+    height:258px;
+}
+
+.contenido-texto h6{
+    padding: 0px 0px 30px 15px;
+    font-weight : 500 ;
+    text-align: justify;
+}
+
+.contenido-texto h3{
+    padding: 0px 0px 0px 15px;
+    margin: 1;
+    font-weight : 500 ;
+    text-align: justify;
+}
+
+.banner {
+    margin-top: -4px;
+    position: relative;
+    
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1000;
+    top: 0;
+    
+    
+}
+
+.banner__img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    
+}
+
+.banner__content{
+    color:white;
+    text-align: left;
+    position: absolute;
+    z-index: 1200;
+    top: 10%;
+    left: 60%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.3em;
+    font-weight: bold;
+   
+
+}
+
+/*-------estilos debajo de la pagina imagen footer ----*/
+.main-footer{
+    background:#222;
+    color:white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+
+
