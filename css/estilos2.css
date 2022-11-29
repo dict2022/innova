@@ -50,6 +50,7 @@ header{
 /*----estilos header------*/
 
 .main-header{
+    display: flex;
     width: 100%;
 }
 
@@ -179,34 +180,38 @@ header{
 
 
 .banner__content{
-   display: flex;
+display: flex;
  font-family: 'Myriad', sans-serif;
-    padding: 100px;
-    margin-top: 80px;
+    padding: 10px;
+    margin-top: 20px;
     justify-content: space-evenly;
     width:120%;
+    box-sizing:border-box;
 }
 
 .imagenizquierdo{
-    display: flex;
     margin-top: 15px;
     width:90%;
     height:258px;
+    box-sizing:border-box;
 }
 
 .contenido-texto h6{
     padding: 0px 0px 30px 15px;
     font-weight : 500 ;
     text-align: justify;
+    box-sizing:border-box;
 }
 
 .banner {
+    
     margin-top: -4px;
     position: relative;
     
 }
 
 .banner:before {
+    
     content: '';
     position: absolute;
     width: 100%;
@@ -226,6 +231,7 @@ header{
 }
 
 .banner__content{
+    
     width: 90%;
     color:white;
     text-align: left;
